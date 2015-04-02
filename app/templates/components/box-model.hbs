@@ -1,0 +1,30 @@
+{{yield}}
+<div style="
+  position: relative;
+  height: {{model.total_height}}px;
+  width: {{model.total_width}}px;
+  border: 1px solid black;
+  ">
+  <div
+    class="box-margin"
+    style="
+    {{!-- border:1px solid red; --}}
+    height: {{model.margin_height}}px;
+    width: {{model.margin_width}}px;
+    background-color: blue;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    ">
+  </div>
+  <div style="
+    border: 1px solid black;
+    height: {{model.content_height}}px;
+    width: {{model.content_width}}px;
+    background-color: red;
+    position: absolute;
+    top: {{model.margin_top}}px;
+    left: {{model.margin_left}}px;
+    ">
+  </div>
+</div>

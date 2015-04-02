@@ -1,0 +1,14 @@
+<h1>Margin</h1>
+<ul>
+  <li>Top: {{numeric-slider numericValue=model.margin_top}}{{model.margin_top}}</li>
+  <li>Right: {{numeric-slider numericValue=model.margin_right}}{{model.margin_right}}</li>
+  <li>Bottom: {{numeric-slider numericValue=model.margin_bottom}}{{model.margin_bottom}}</li>
+  <li>Left: {{numeric-slider numericValue=model.margin_left}}{{model.margin_left}}</li>
+</ul>
+<h1>Content</h1>
+<ul>
+  <li>Height: {{numeric-slider numericValue=model.content_height}}{{model.content_height}}</li>
+  <li>Width: {{numeric-slider numericValue=model.content_width}}{{model.content_width}}</li>
+</ul>
+
+{{box-model model=model}}
